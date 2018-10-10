@@ -23,20 +23,20 @@ local function SetupLayout(layout)
 		E.db["databars"]["honor"]["orientation"] = "HORIZONTAL"
 		E.db["databars"]["honor"]["height"] = 6
 		E.db["databars"]["honor"]["textSize"] = 9
-		E.db["databars"]["honor"]["width"] = 339
+		E.db["databars"]["honor"]["width"] = 338
 		E.db["databars"]["reputation"]["font"] = "MelloUI Forced Square"
 		E.db["databars"]["reputation"]["enable"] = true
 		E.db["databars"]["reputation"]["fontOutline"] = "THICKOUTLINE"
 		E.db["databars"]["reputation"]["orientation"] = "HORIZONTAL"
 		E.db["databars"]["reputation"]["height"] = 6
 		E.db["databars"]["reputation"]["textSize"] = 9
-		E.db["databars"]["reputation"]["width"] = 339
+		E.db["databars"]["reputation"]["width"] = 338
 		E.db["databars"]["azerite"]["font"] = "MelloUI Forced Square"
 		E.db["databars"]["azerite"]["fontOutline"] = "THICKOUTLINE"
 		E.db["databars"]["azerite"]["orientation"] = "HORIZONTAL"
 		E.db["databars"]["azerite"]["height"] = 6
 		E.db["databars"]["azerite"]["textSize"] = 9
-		E.db["databars"]["azerite"]["width"] = 339
+		E.db["databars"]["azerite"]["width"] = 338
 
 		E.db["bags"]["junkIcon"] = true
 		E.db["bags"]["countFont"] = "Expressway"
@@ -274,7 +274,7 @@ local function SetupLayout(layout)
 		E.db["movers"]["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-140"
 		E.db["movers"]["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,0,-441"
 		E.db["movers"]["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-270,-323"
-		E.db["movers"]["AzeriteBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,216"
+		E.db["movers"]["AzeriteBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,213"
 		E.db["movers"]["BNETMover"] = "TOP,ElvUIParent,TOP,277,-4"
 		E.db["movers"]["BelowMinimapContainerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-189"
 		E.db["movers"]["BuffsMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-7"
@@ -284,10 +284,10 @@ local function SetupLayout(layout)
 		E.db["movers"]["DigSiteProgressBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,315"
 		E.db["movers"]["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-340,31"
 		E.db["movers"]["ElvUIBankMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,21"
-		E.db["movers"]["ExperienceBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,211"
+		E.db["movers"]["ExperienceBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,208"
 		E.db["movers"]["GMMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-634,-4"
 		E.db["movers"]["GhostFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-354,462"
-		E.db["movers"]["HonorBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,221"
+		E.db["movers"]["HonorBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,218"
 		E.db["movers"]["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,31"
 		E.db["movers"]["LocationLiteMover"] = "TOP,ElvUIParent,TOP,0,-7"
 		E.db["movers"]["LocationMover"] = "TOP,ElvUIParent,TOP,0,-7"
@@ -298,7 +298,7 @@ local function SetupLayout(layout)
 		E.db["movers"]["OzCooldownsMover"] = "BOTTOM,ElvUIParent,BOTTOM,-317,306"
 		E.db["movers"]["ProfessionsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-5,-184"
 		E.db["movers"]["RaidMarkerBarAnchor"] = "TOP,ElvUIParent,TOP,0,-4"
-		E.db["movers"]["ReputationBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,211"
+		E.db["movers"]["ReputationBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,208"
 		E.db["movers"]["RequestStopButton"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-516,306"
 		E.db["movers"]["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,31"
 		E.db["movers"]["SocialMenuMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,325"
@@ -1290,7 +1290,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["target"]["aurabar"]["height"] = 21
 		E.db["unitframe"]["units"]["target"]["aurabar"]["yOffset"] = -1
 		E.db["unitframe"]["units"]["target"]["castbar"]["height"] = 24
-		E.db["unitframe"]["units"]["target"]["castbar"]["width"] = 239
+		E.db["unitframe"]["units"]["target"]["castbar"]["width"] = 240
 		E.db["unitframe"]["units"]["target"]["disableMouseoverGlow"] = true
 		E.db["unitframe"]["units"]["target"]["width"] = 137
 		E.db["unitframe"]["units"]["target"]["name"]["text_format"] = ""
@@ -1306,7 +1306,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["target"]["power"]["strataAndLevel"]["frameLevel"] = 2
 		E.db["unitframe"]["units"]["target"]["power"]["strataAndLevel"]["useCustomStrata"] = true
 		E.db["unitframe"]["units"]["target"]["power"]["height"] = 12
-		E.db["unitframe"]["units"]["target"]["power"]["detachedWidth"] = 239
+		E.db["unitframe"]["units"]["target"]["power"]["detachedWidth"] = 240
 		E.db["unitframe"]["units"]["target"]["power"]["text_format"] = ""
 		E.db["unitframe"]["units"]["target"]["power"]["width"] = "spaced"
 		E.db["unitframe"]["units"]["boss"]["debuffs"]["fontSize"] = 20
@@ -1405,7 +1405,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["power"]["detachedWidth"] = 324
 		E.db["unitframe"]["units"]["player"]["threatStyle"] = "ICONTOPLEFT"
 		E.db["unitframe"]["units"]["player"]["disableMouseoverGlow"] = true
-		E.db["unitframe"]["units"]["player"]["width"] = 173
+		E.db["unitframe"]["units"]["player"]["width"] = 170
 		E.db["unitframe"]["units"]["player"]["health"]["xOffset"] = 157
 		E.db["unitframe"]["units"]["player"]["health"]["attachTextTo"] = "Frame"
 		E.db["unitframe"]["units"]["player"]["health"]["text_format"] = ""
@@ -1531,7 +1531,7 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["iFilger RaidDebuffs"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-687,254"
 		E.db["movers"]["iFilger TargetDebuffs"] = "BOTTOM,ElvUIParent,BOTTOM,420,400"
 		E.db["movers"]["TargetPortraitMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,154"
-		E.db["movers"]["TargetPowerBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-487,146"
+		E.db["movers"]["TargetPowerBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,146"
 		E.db["movers"]["PlayerNameplate"] = "BOTTOM,ElvUIParent,BOTTOM,0,359"
 		E.db["movers"]["PlayerPortraitMover"] = "BOTTOM,ElvUIParent,BOTTOM,-87,148"
 		E.db["movers"]["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,146"
@@ -1548,7 +1548,7 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736"
 		E.db["movers"]["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,543,641"
 		E.db["movers"]["ElvUF_TargetAuraMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-641,400"
-		E.db["movers"]["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,204"
+		E.db["movers"]["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,134"
 		E.db["movers"]["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,261,153"
 		E.db["movers"]["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-513,293"
 		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,154"
