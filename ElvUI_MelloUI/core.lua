@@ -25,6 +25,9 @@ end
 -- Check other addons
 MLUI.AS = MLUI:IsAddOnEnabled('AddOnSkins')
 MLUI.BU = MLUI:IsAddOnEnabled('ElvUI_BenikUI')
+MLUI.DT = MLUI:IsAddOnEnabled('ElvUI_DTBars2')
+MLUI.CT = MLUI:IsAddOnEnabled('ElvUI_CustomTweaks')
+MLUI.VAT = MLUI:IsAddOnEnabled('ElvUI_VisualAuraTimers')
 
 LSM:Register('font', 'MelloUI Club', [[Interface\AddOns\ElvUI_MelloUI\media\fonts\CLUB____.ttf]])
 LSM:Register('font', 'MelloUI Tukui UnitFrame', [[Interface\AddOns\ElvUI_MelloUI\media\fonts\uf_font.ttf]])
@@ -37,10 +40,9 @@ end
 function MLUI:Initialize()
 
 	-- run install when ElvUI install finishes
-	--if E.private.install_complete == E.version and E.db.melloui.installed == nil then
+	if E.private.install_complete == E.version and E.db.melloui.installed == nil then
 		E:GetModule("PluginInstaller"):Queue(MLUI.installTable)
-		print('que melloui')
-	--end
+	end
 
 	-- run the setup again when a profile gets deleted.
 	local profileKey = ElvDB.profileKeys[E.myname..' - '..E.myrealm]
