@@ -334,20 +334,20 @@ local function SetupLayout(layout)
 		E.db["databars"]["honor"]["orientation"] = "HORIZONTAL"
 		E.db["databars"]["honor"]["height"] = 6
 		E.db["databars"]["honor"]["textSize"] = 9
-		E.db["databars"]["honor"]["width"] = 339
+		E.db["databars"]["honor"]["width"] = 338
 		E.db["databars"]["reputation"]["font"] = "MelloUI Club"
 		E.db["databars"]["reputation"]["enable"] = true
 		E.db["databars"]["reputation"]["fontOutline"] = "THICKOUTLINE"
 		E.db["databars"]["reputation"]["orientation"] = "HORIZONTAL"
 		E.db["databars"]["reputation"]["height"] = 6
 		E.db["databars"]["reputation"]["textSize"] = 9
-		E.db["databars"]["reputation"]["width"] = 339
+		E.db["databars"]["reputation"]["width"] = 338
 		E.db["databars"]["azerite"]["font"] = "MelloUI Club"
 		E.db["databars"]["azerite"]["fontOutline"] = "THICKOUTLINE"
 		E.db["databars"]["azerite"]["orientation"] = "HORIZONTAL"
 		E.db["databars"]["azerite"]["height"] = 6
 		E.db["databars"]["azerite"]["textSize"] = 9
-		E.db["databars"]["azerite"]["width"] = 339
+		E.db["databars"]["azerite"]["width"] = 338
 
 		E.db["datatexts"]["fontOutline"] = "OUTLINE"
 		E.db["datatexts"]["leftChatPanel"] = false
@@ -584,7 +584,7 @@ local function SetupLayout(layout)
 		end
 
 		E.db["movers"]["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-140"
-		E.db["movers"]["AzeriteBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,213"
+		E.db["movers"]["AzeriteBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,213"
 		E.db["movers"]["BNETMover"] = "TOP,ElvUIParent,TOP,277,-4"
 		E.db["movers"]["BelowMinimapContainerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-189"
 		E.db["movers"]["BuffsMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-10"
@@ -597,7 +597,7 @@ local function SetupLayout(layout)
 		E.db["movers"]["ExperienceBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,208"
 		E.db["movers"]["GMMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-634,-4"
 		E.db["movers"]["GhostFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-354,462"
-		E.db["movers"]["HonorBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,218"
+		E.db["movers"]["HonorBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,218"
 		E.db["movers"]["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,31"
 		E.db["movers"]["LevelUpBossBannerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-507,-508"
 		E.db["movers"]["LocationLiteMover"] = "TOP,ElvUIParent,TOP,0,-7"
@@ -610,7 +610,7 @@ local function SetupLayout(layout)
 		E.db["movers"]["OzCooldownsMover"] = "BOTTOM,ElvUIParent,BOTTOM,-317,306"
 		E.db["movers"]["ProfessionsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-5,-184"
 		E.db["movers"]["RaidMarkerBarAnchor"] = "TOP,ElvUIParent,TOP,0,-4"
-		E.db["movers"]["ReputationBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,208"
+		E.db["movers"]["ReputationBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,208"
 		E.db["movers"]["RequestStopButton"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-516,306"
 		E.db["movers"]["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,31"
 		E.db["movers"]["SocialMenuMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,325"
@@ -1625,7 +1625,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameStrata"] = "HIGH"
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameLevel"] = 80
 		E.db["unitframe"]["units"]["player"]["classbar"]["height"] = 15
-		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 324
+		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 327
 		E.db["unitframe"]["units"]["player"]["classbar"]["fill"] = "spaced"
 		E.db["unitframe"]["units"]["player"]["aurabar"]["maxDuration"] = 30
 		E.db["unitframe"]["units"]["player"]["aurabar"]["enable"] = false
@@ -1634,7 +1634,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["power"]["detachFromFrame"] = true
 		E.db["unitframe"]["units"]["player"]["power"]["strataAndLevel"]["useCustomStrata"] = true
 		E.db["unitframe"]["units"]["player"]["power"]["text_format"] = ""
-		E.db["unitframe"]["units"]["player"]["power"]["detachedWidth"] = 324
+		E.db["unitframe"]["units"]["player"]["power"]["detachedWidth"] = 327
 		E.db["unitframe"]["units"]["player"]["threatStyle"] = "ICONTOPLEFT"
 		E.db["unitframe"]["units"]["player"]["disableMouseoverGlow"] = true
 		E.db["unitframe"]["units"]["player"]["width"] = 173
@@ -1652,7 +1652,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["castbar"]["height"] = 42
 		E.db["unitframe"]["units"]["player"]["castbar"]["iconAttachedTo"] = "Castbar"
 		E.db["unitframe"]["units"]["player"]["castbar"]["width"] = 324
-		E.db["unitframe"]["units"]["player"]["height"] = 60
+		E.db["unitframe"]["units"]["player"]["height"] = 59
 		E.db["unitframe"]["units"]["player"]["pvp"]["text_format"] = ""
 		E.db["unitframe"]["units"]["raid"]["horizontalSpacing"] = -1
 		E.db["unitframe"]["units"]["raid"]["debuffs"]["countFontSize"] = 15
@@ -1890,7 +1890,7 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,154"
 		E.db["movers"]["ElvUF_FocusAuraMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,639,400"
 		E.db["movers"]["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,-355,420"
-		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1121,210"
+		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1121,213"
 		E.db["movers"]["ElvUF_PetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,309"
 		E.db["movers"]["ElvUF_PetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,299"
 		E.db["movers"]["ElvUF_PlayerAuraMover"] = "BOTTOM,ElvUIParent,BOTTOM,1,215"
@@ -1905,7 +1905,7 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,400,154"
 		E.db["movers"]["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-513,293"
 		E.db["movers"]["PlayerNameplate"] = "BOTTOM,ElvUIParent,BOTTOM,0,359"
-		E.db["movers"]["PlayerPortraitMover"] = "BOTTOM,ElvUIParent,BOTTOM,-86,147"
+		E.db["movers"]["PlayerPortraitMover"] = "BOTTOM,ElvUIParent,BOTTOM,-89,147"
 		E.db["movers"]["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,146"
 		E.db["movers"]["TargetPortraitMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-710,154"
 		E.db["movers"]["TargetPowerBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-710,149"
