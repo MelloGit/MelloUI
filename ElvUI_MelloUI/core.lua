@@ -25,6 +25,9 @@ end
 -- Check other addons
 MLUI.AS = MLUI:IsAddOnEnabled('AddOnSkins')
 MLUI.BU = MLUI:IsAddOnEnabled('ElvUI_BenikUI')
+MLUI.DT = MLUI:IsAddOnEnabled('ElvUI_DTBars2')
+MLUI.CT = MLUI:IsAddOnEnabled('ElvUI_CustomTweaks')
+MLUI.VAT = MLUI:IsAddOnEnabled('ElvUI_VisualAuraTimers')
 
 LSM:Register('font', 'MelloUI Club', [[Interface\AddOns\ElvUI_MelloUI\media\fonts\CLUB____.ttf]])
 LSM:Register('font', 'MelloUI Tukui UnitFrame', [[Interface\AddOns\ElvUI_MelloUI\media\fonts\uf_font.ttf]])
