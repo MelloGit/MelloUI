@@ -1930,8 +1930,8 @@ end
 
 local function InstallComplete()
 	--E.private.install_complete = E.version
-	--E.db.melloui.installed = true
-	--E.private.melloui.install_complete = MLUI.Version
+	E.db.melloui.installed = true
+	E.private.melloui.install_complete = MLUI.Version
 
 	ReloadUI()
 end

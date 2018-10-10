@@ -40,10 +40,9 @@ end
 function MLUI:Initialize()
 
 	-- run install when ElvUI install finishes
-	--if E.private.install_complete == E.version and E.db.melloui.installed == nil then
+	if E.private.install_complete == E.version and E.db.melloui.installed == nil then
 		E:GetModule("PluginInstaller"):Queue(MLUI.installTable)
-		print('que melloui')
-	--end
+	end
 
 	-- run the setup again when a profile gets deleted.
 	local profileKey = ElvDB.profileKeys[E.myname..' - '..E.myrealm]
