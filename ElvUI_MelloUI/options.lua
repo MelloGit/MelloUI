@@ -81,8 +81,8 @@ function MLUI:ConfigTable()
 						type = "input",
 						width = "full",
 						name = L["Report Bugs or Requests"],
-						get = function() return "" end, -- here we add a web page/github that the user can add tickets
-						set = function() return "" end, -- here we add a web page/github that the user can add tickets
+						get = function() return "https://github.com/Benik/MelloUI/issues" end, -- here we add a web page/github that the user can add tickets
+						set = function() return "https://github.com/Benik/MelloUI/issues" end, -- here we add a web page/github that the user can add tickets
 					},
 					donors = {
 						order = 4,
