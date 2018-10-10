@@ -16,7 +16,7 @@ local DONATORS = {
 	'Mounja',
 	'Rearun',
 	'Snesteget',
-	'Orangepaw33',
+	'Orangepaw3',
 }
 
 tsort(DONATORS, function(a, b) return a < b end)
