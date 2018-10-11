@@ -698,9 +698,9 @@ local function SetupActionbars(layout)
 		E.db["movers"]["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,155,-81"
 		E.db["movers"]["PetAB"] = "BOTTOM,ElvUIParent,BOTTOM,257,31"
 		E.db["movers"]["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,1082,140"
-		E.db["movers"]["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,-43,360"
+		E.db["movers"]["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,347"
 		E.db["movers"]["MicrobarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,417,-491"
-		E.db["movers"]["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,243,455"
+		E.db["movers"]["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,196,348"
 		E.db["movers"]["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-300,-323"
 
 		print('Actionbars 1080')
