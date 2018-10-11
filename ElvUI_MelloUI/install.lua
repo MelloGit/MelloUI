@@ -1394,7 +1394,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameLevel"] = 80
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameStrata"] = "HIGH"
 		E.db["unitframe"]["units"]["player"]["classbar"]["height"] = 15
-		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 324
+		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 323
 		E.db["unitframe"]["units"]["player"]["classbar"]["fill"] = "spaced"
 		E.db["unitframe"]["units"]["player"]["aurabar"]["maxDuration"] = 30
 		E.db["unitframe"]["units"]["player"]["aurabar"]["enable"] = false
@@ -1421,7 +1421,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["castbar"]["height"] = 42
 		E.db["unitframe"]["units"]["player"]["castbar"]["width"] = 324
 		E.db["unitframe"]["units"]["player"]["castbar"]["iconAttachedTo"] = "Castbar"
-		E.db["unitframe"]["units"]["player"]["height"] = 60
+		E.db["unitframe"]["units"]["player"]["height"] = 61
 		E.db["unitframe"]["units"]["player"]["pvp"]["text_format"] = ""
 		E.db["unitframe"]["units"]["party"]["horizontalSpacing"] = 8
 		E.db["unitframe"]["units"]["party"]["debuffs"]["enable"] = false
@@ -1538,11 +1538,11 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,146"
 		E.db["movers"]["ElvUF_FocusAuraMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,639,400"
 		E.db["movers"]["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,-355,420"
-		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,761,216"
+		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,761,232"
 		E.db["movers"]["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-87,160"
 		E.db["movers"]["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-87,160"
 		E.db["movers"]["ElvUF_PlayerAuraMover"] = "BOTTOM,ElvUIParent,BOTTOM,1,215"
-		E.db["movers"]["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,287"
+		E.db["movers"]["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,299"
 		E.db["movers"]["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,77,147"
 		E.db["movers"]["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,349,252"
 		E.db["movers"]["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,352,258"
@@ -1552,7 +1552,7 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,134"
 		E.db["movers"]["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,261,153"
 		E.db["movers"]["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-513,293"
-		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,154"
+		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,207"
 
 		print('Unitframes 1080')
 	elseif layout == '1440' then
@@ -1888,14 +1888,14 @@ local function SetupUnitframes(layout)
 		end
 
 		E.db["movers"]["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-270,-323"
-		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,154"
+		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,204"
 		E.db["movers"]["ElvUF_FocusAuraMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,639,400"
 		E.db["movers"]["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,-355,420"
-		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1121,213"
+		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1121,232"
 		E.db["movers"]["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-88,160"
 		E.db["movers"]["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-88,160"
 		E.db["movers"]["ElvUF_PlayerAuraMover"] = "BOTTOM,ElvUIParent,BOTTOM,1,215"
-		E.db["movers"]["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,287"
+		E.db["movers"]["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,299"
 		E.db["movers"]["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,74,146"
 		E.db["movers"]["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,686,247"
 		E.db["movers"]["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,686,255"
