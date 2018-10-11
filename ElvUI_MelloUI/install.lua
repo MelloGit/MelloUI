@@ -114,11 +114,11 @@ local function SetupLayout(layout)
 			E.db["benikui"]["general"]["shadows"] = false
 			E.db["benikui"]["general"]["splashScreen"] = false
 			E.db["benikui"]["datatexts"]["mail"]["toggle"] = false
-			E.db["benikui"]["datatexts"]["middle"]["enable"] = false
-			E.db["benikui"]["datatexts"]["middle"]["styled"] = true
-			E.db["benikui"]["datatexts"]["middle"]["backdrop"] = true
+			E.db["benikui"]["datatexts"]["middle"]["enable"] = true
+			E.db["benikui"]["datatexts"]["middle"]["styled"] = false
+			E.db["benikui"]["datatexts"]["middle"]["backdrop"] = false
 			E.db["benikui"]["datatexts"]["middle"]["width"] = 322
-			E.db["benikui"]["datatexts"]["chat"]["enable"] = false
+			E.db["benikui"]["datatexts"]["chat"]["enable"] = true
 			E.db["benikui"]["datatexts"]["chat"]["editBoxPosition"] = "ABOVE_CHAT"
 			E.db["benikuiDatabars"]["experience"]["buiStyle"] = false
 			E.db["benikuiDatabars"]["honor"]["notifiers"]["position"] = "LEFT"
@@ -129,7 +129,7 @@ local function SetupLayout(layout)
 			E.db["benikuiDatabars"]["azerite"]["buiStyle"] = false
 			E.db["benikuiDatabars"]["azerite"]["notifiers"]["position"] = "RIGHT"
 			E.db["datatexts"]["panels"]["BuiMiddleDTPanel"]["right"] = "Mastery"
-			E.db["datatexts"]["panels"]["BuiMiddleDTPanel"]["left"] = "Versatility"
+			E.db["datatexts"]["panels"]["BuiMiddleDTPanel"]["left"] = "Critical Strike"
 			E.db["datatexts"]["panels"]["BuiMiddleDTPanel"]["middle"] = "Haste"
 			E.db["dashboards"]["tokens"]["enableTokens"] = false
 			E.db["dashboards"]["professions"]["enableProfessions"] = false
@@ -180,7 +180,7 @@ local function SetupLayout(layout)
 		E.db["chat"]["font"] = "MelloUI Club"
 		E.db["chat"]["noAlertInCombat"] = true
 		E.db["chat"]["fadeTabsNoBackdrop"] = false
-		E.db["chat"]["panelHeight"] = 174
+		E.db["chat"]["panelHeight"] = 186
 		E.db["chat"]["tapFontSize"] = 13
 		E.db["chat"]["panelWidth"] = 338
 
@@ -279,7 +279,7 @@ local function SetupLayout(layout)
 		E.db["movers"]["BelowMinimapContainerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-189"
 		E.db["movers"]["BuffsMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-7"
 		E.db["movers"]["BuiDashboardMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-8"
-		E.db["movers"]["BuiMiddleDtMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,243"
+		E.db["movers"]["BuiMiddleDtMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,0"
 		E.db["movers"]["DebuffsMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-124"
 		E.db["movers"]["DigSiteProgressBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,315"
 		E.db["movers"]["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-340,31"
@@ -288,7 +288,7 @@ local function SetupLayout(layout)
 		E.db["movers"]["GMMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-634,-4"
 		E.db["movers"]["GhostFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-354,462"
 		E.db["movers"]["HonorBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,218"
-		E.db["movers"]["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,31"
+		E.db["movers"]["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,19"
 		E.db["movers"]["LocationLiteMover"] = "TOP,ElvUIParent,TOP,0,-7"
 		E.db["movers"]["LocationMover"] = "TOP,ElvUIParent,TOP,0,-7"
 		E.db["movers"]["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,279,-110"
@@ -300,11 +300,11 @@ local function SetupLayout(layout)
 		E.db["movers"]["RaidMarkerBarAnchor"] = "TOP,ElvUIParent,TOP,0,-4"
 		E.db["movers"]["ReputationBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,208"
 		E.db["movers"]["RequestStopButton"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-516,306"
-		E.db["movers"]["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,31"
+		E.db["movers"]["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-2,19"
 		E.db["movers"]["SocialMenuMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,325"
 		E.db["movers"]["SquareMinimapButtonBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-297"
 		E.db["movers"]["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-260,-182"
-		E.db["movers"]["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-342,29"
+		E.db["movers"]["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-210,226"
 		E.db["movers"]["TopCenterContainerMover"] = "TOP,ElvUIParent,TOP,0,-34"
 		E.db["movers"]["UIErrorsFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,578,-235"
 		E.db["movers"]["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-503"
@@ -666,7 +666,7 @@ local function SetupActionbars(layout)
 		E.db["actionbar"]["bar1"]["buttonsize"] = 35
 		E.db["actionbar"]["bar1"]["buttons"] = 9
 		E.db["actionbar"]["bar1"]["buttonspacing"] = 1
-		E.db["actionbar"]["bar1"]["backdrop"] = true
+		E.db["actionbar"]["bar1"]["backdrop"] = false
 		E.db["actionbar"]["bar1"]["backdropSpacing"] = 1
 		E.db["actionbar"]["fontOutline"] = "OUTLINE"
 		E.db["actionbar"]["bar5"]["enabled"] = false
@@ -1414,8 +1414,8 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["castbar"]["insideInfoPanel"] = false
 		E.db["unitframe"]["units"]["player"]["castbar"]["iconAttached"] = false
 		E.db["unitframe"]["units"]["player"]["castbar"]["iconYOffset"] = 1
-		E.db["unitframe"]["units"]["player"]["castbar"]["iconXOffset"] = 5
-		E.db["unitframe"]["units"]["player"]["castbar"]["iconPosition"] = "RIGHT"
+		E.db["unitframe"]["units"]["player"]["castbar"]["iconXOffset"] = -8
+		E.db["unitframe"]["units"]["player"]["castbar"]["iconPosition"] = "LEFT"
 		E.db["unitframe"]["units"]["player"]["castbar"]["iconSize"] = 63
 		E.db["unitframe"]["units"]["player"]["castbar"]["height"] = 42
 		E.db["unitframe"]["units"]["player"]["castbar"]["width"] = 324

@@ -43,7 +43,7 @@ function MLUI:ConfigTable()
 			header2 = {
 				order = 3,
 				type = "header",
-				name = format(L["%s is bla bla bla"], MLUI.Title), -- Short description
+				name = format(L["%s is Minimalistic ElvUI Remake"], MLUI.Title), -- Short description
 			},
 			install = {
 				order = 4,
