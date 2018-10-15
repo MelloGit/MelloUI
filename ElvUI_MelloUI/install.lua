@@ -1394,7 +1394,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameLevel"] = 80
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameStrata"] = "HIGH"
 		E.db["unitframe"]["units"]["player"]["classbar"]["height"] = 15
-		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 323
+		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 324
 		E.db["unitframe"]["units"]["player"]["classbar"]["fill"] = "spaced"
 		E.db["unitframe"]["units"]["player"]["aurabar"]["maxDuration"] = 30
 		E.db["unitframe"]["units"]["player"]["aurabar"]["enable"] = false
@@ -1552,7 +1552,7 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,134"
 		E.db["movers"]["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,261,153"
 		E.db["movers"]["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-513,293"
-		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,207"
+		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,207"
 
 		print('Unitframes 1080')
 	elseif layout == '1440' then
