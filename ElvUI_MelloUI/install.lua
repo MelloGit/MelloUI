@@ -1397,7 +1397,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameLevel"] = 80
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameStrata"] = "HIGH"
 		E.db["unitframe"]["units"]["player"]["classbar"]["height"] = 15
-		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 323
+		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 324
 		E.db["unitframe"]["units"]["player"]["classbar"]["fill"] = "spaced"
 		E.db["unitframe"]["units"]["player"]["aurabar"]["maxDuration"] = 30
 		E.db["unitframe"]["units"]["player"]["aurabar"]["enable"] = false
@@ -1534,14 +1534,14 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["iFilger PvPTargetDebuffs"] = "TOPLEFT,ElvUIParent,TOPLEFT,368,-476"
 		E.db["movers"]["iFilger RaidDebuffs"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-687,254"
 		E.db["movers"]["iFilger TargetDebuffs"] = "BOTTOM,ElvUIParent,BOTTOM,420,400"
-		E.db["movers"]["TargetPortraitMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,154"
-		E.db["movers"]["TargetPowerBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,146"
+		E.db["movers"]["TargetPortraitMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-528,154"
+		E.db["movers"]["TargetPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,312,146"
 		E.db["movers"]["PlayerNameplate"] = "BOTTOM,ElvUIParent,BOTTOM,0,359"
 		E.db["movers"]["PlayerPortraitMover"] = "BOTTOM,ElvUIParent,BOTTOM,-87,148"
 		E.db["movers"]["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,146"
 		E.db["movers"]["ElvUF_FocusAuraMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,639,400"
 		E.db["movers"]["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,-355,420"
-		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,761,232"
+		E.db["movers"]["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,801,232"
 		E.db["movers"]["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-87,160"
 		E.db["movers"]["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-87,160"
 		E.db["movers"]["ElvUF_PlayerAuraMover"] = "BOTTOM,ElvUIParent,BOTTOM,1,215"
@@ -1552,10 +1552,10 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736"
 		E.db["movers"]["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,543,641"
 		E.db["movers"]["ElvUF_TargetAuraMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-641,400"
-		E.db["movers"]["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,134"
+		E.db["movers"]["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,312,124"
 		E.db["movers"]["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,261,153"
 		E.db["movers"]["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-513,293"
-		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,207"
+		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,207"
 
 		print('Unitframes 1080')
 	elseif layout == '1440' then
