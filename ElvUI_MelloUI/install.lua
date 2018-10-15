@@ -1397,7 +1397,7 @@ local function SetupUnitframes(layout)
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameLevel"] = 80
 		E.db["unitframe"]["units"]["player"]["classbar"]["strataAndLevel"]["frameStrata"] = "HIGH"
 		E.db["unitframe"]["units"]["player"]["classbar"]["height"] = 15
-		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 324
+		E.db["unitframe"]["units"]["player"]["classbar"]["detachedWidth"] = 323
 		E.db["unitframe"]["units"]["player"]["classbar"]["fill"] = "spaced"
 		E.db["unitframe"]["units"]["player"]["aurabar"]["maxDuration"] = 30
 		E.db["unitframe"]["units"]["player"]["aurabar"]["enable"] = false
@@ -1555,7 +1555,7 @@ local function SetupUnitframes(layout)
 		E.db["movers"]["ElvUF_TargetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,134"
 		E.db["movers"]["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,261,153"
 		E.db["movers"]["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-513,293"
-		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,207"
+		E.db["movers"]["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,207"
 
 		print('Unitframes 1080')
 	elseif layout == '1440' then
@@ -1942,11 +1942,17 @@ local function SetupAddons()
 		MLUI:LoadBigWigsProfile(res)
 		tinsert(addonNames, 'BigWigs')
 	end
-	
+
 	-- Details
 	if MLUI:IsAddOnEnabled('Details') then
 		MLUI:LoadDetailsProfile(res)
 		tinsert(addonNames, 'Details')
+	end
+
+	-- XIV_Databar
+	if MLUI:IsAddOnEnabled('XIV_Databar') then
+		MLUI:LoadXIV_DatabarProfile(res)
+		tinsert(addonNames, 'XIV_Databar')
 	end
 	
 	if checkTable(addonNames) ~= nil then
@@ -1982,7 +1988,7 @@ MLUI.installTable = {
 	["Pages"] = {
 		[1] = function()
 			PluginInstallTutorialImage:Size(384, 192)
-			PluginInstallTutorialImage:Point('BOTTOM', 0, 60)
+			PluginInstallTutorialImage:Point('BOTTOM', 0, 50)
 			PluginInstallTitleFrame.text:SetFont(E["media"].normFont, 16, "OUTLINE")
 			PluginInstallFrame.SubTitle:SetFormattedText(L["Welcome to MelloUI version %s, for ElvUI %s."], MLUI.Version, E.version)
 			PluginInstallFrame.Desc1:SetText(L["By pressing the Continue button, MelloUI will be applied on your current ElvUI installation.\n\n|cffff8000 TIP: It would be nice if you apply the changes in a new profile, just in case you don't like the result.|r"])
