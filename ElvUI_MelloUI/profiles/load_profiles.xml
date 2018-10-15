@@ -1,4 +1,5 @@
 ﻿<Ui xmlns="http://www.blizzard.com/wow/ui/">
 	<script file="Details.lua"/>
 	<script file="BigWigs.lua"/>
+	<script file="XIV_Databar.lua"/>
 </Ui>

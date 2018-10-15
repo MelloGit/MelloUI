@@ -1,6 +1,6 @@
 ## Interface: 80000
 ## Author: Mello, Benik
-## Version: 1.00
+## Version: 1.01
 ## Title: |cff1784d1ElvUI|r |cff00c0faMelloUI|r
 ## Notes: a minimalistic ElvUI rework
 ## RequiredDeps: ElvUI

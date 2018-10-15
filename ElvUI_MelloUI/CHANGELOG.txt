@@ -1,0 +1,9 @@
+1.01
+Added WoW Interface link
+Moved the installer logo a bit lower so there will be space for the addons profiles string
+Added back XIV_Databar profiles. They have to be loaded manually
+Added the addon page at the description
+Prevent an error if BigWigs has never created any profile
+
+1.00
+Initial release

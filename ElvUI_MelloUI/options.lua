@@ -70,11 +70,26 @@ function MLUI:ConfigTable()
 					},
 					addonpage = {
 						order = 2,
-						type = "input",
-						width = "full",
+						type = "group",
 						name = L["AddOn Description"],
-						get = function() return "https://www.tukui.org/addons.php?id=122" end,
-						set = function() return "https://www.tukui.org/addons.php?id=122" end,
+						args = {
+							tukui = {
+								order = 1,
+								type = "input",
+								width = "full",
+								name = L["Tukui.org"],
+								get = function() return "https://www.tukui.org/addons.php?id=122" end,
+								set = function() return "https://www.tukui.org/addons.php?id=122" end,
+							},
+							wowinterface = {
+								order = 1,
+								type = "input",
+								width = "full",
+								name = L["WoW Interface"],
+								get = function() return "https://www.wowinterface.com/downloads/info24717-MelloUIv1.00.html" end,
+								set = function() return "https://www.wowinterface.com/downloads/info24717-MelloUIv1.00.html" end,
+							},
+						},
 					},
 					tickets = {
 						order = 3,
