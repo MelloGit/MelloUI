@@ -3255,7 +3255,6 @@ function MLUI:LoadDetailsProfile(res)
 			},
 		}
 		_detalhes:ApplyProfile("Mello1920")
-		print('Details1080')
 	elseif res == '1440' then
 		_detalhes_global = {
 			["npcid_pool"] = {
@@ -6509,6 +6508,5 @@ function MLUI:LoadDetailsProfile(res)
 			},
 		}
 		_detalhes:ApplyProfile("Mello2560")
-		print('Details1440')
 	end
 end

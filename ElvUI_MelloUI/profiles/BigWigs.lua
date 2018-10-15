@@ -123,8 +123,6 @@ function MLUI:LoadBigWigsProfile(res)
 		}
 		BigWigsStatsDB = {
 		}
-
-		print('BigWigs1080')
 	elseif res == '1440' then
 		BigWigs3DB = {
 			["profileKeys"] = {
@@ -245,7 +243,5 @@ function MLUI:LoadBigWigsProfile(res)
 		}
 		BigWigsStatsDB = {
 		}
-
-		print('BigWigs1440')
 	end
 end
