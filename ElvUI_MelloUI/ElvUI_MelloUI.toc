@@ -7,8 +7,6 @@
 ## DefaultState: Enabled
 ## OptionalDeps: SharedMedia, ElvUI_BenikUI
 
-locales\load_locales.xml
 core.lua
 install.lua
 options.lua
-profiles\load_profiles.xml

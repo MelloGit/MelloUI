@@ -73,8 +73,8 @@ function MLUI:ConfigTable()
 						type = "input",
 						width = "full",
 						name = L["AddOn Description"],
-						get = function() return "https://www.tukui.org/addons.php?id=122" end,
-						set = function() return "https://www.tukui.org/addons.php?id=122" end,
+						get = function() return "" end, -- main addon page
+						set = function() return "" end, -- main addon page
 					},
 					tickets = {
 						order = 3,
