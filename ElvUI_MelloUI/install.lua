@@ -1,6 +1,9 @@
 local E, L, V, P, G = unpack(ElvUI);
 local MLUI = E:GetModule('MelloUI');
 
+local format, checkTable = format, next
+local tinsert, twipe, tsort, tconcat = table.insert, table.wipe, table.sort, table.concat
+
 local res = '1080'
 
 local function SetupLayout(layout)
@@ -1929,8 +1932,42 @@ local function SetupUnitframes(layout)
 	E:UpdateAll(true)
 end
 
+local addonNames = {}
+local profilesFailed = format('|cff00c0fa%s |r', L["MelloUI didn't find any supported addons for profile creation"])
+
+local function SetupAddons()
+
+	-- BigWigs
+	if MLUI:IsAddOnEnabled('BigWigs') then
+		MLUI:LoadBigWigsProfile(res)
+		tinsert(addonNames, 'BigWigs')
+	end
+	
+	-- Details
+	if MLUI:IsAddOnEnabled('Details') then
+		MLUI:LoadDetailsProfile(res)
+		tinsert(addonNames, 'Details')
+	end
+	
+	if checkTable(addonNames) ~= nil then
+		local profileString = format('|cfffff400%s |r', L['MelloUI successfully created and applied profile(s) for: '])
+
+		tsort(addonNames, function(a, b) return a < b end)
+		local names = tconcat(addonNames, ", ")
+		profileString = profileString..names
+
+		PluginInstallFrame.Desc4:SetText(profileString..'.')
+	else
+		PluginInstallFrame.Desc4:SetText(profilesFailed)
+	end
+
+	PluginInstallStepComplete.message = MLUI.Title..L['Addons Set']
+	PluginInstallStepComplete:Show()
+	twipe(addonNames)
+	E:UpdateAll(true)
+end
+
 local function InstallComplete()
-	--E.private.install_complete = E.version
 	E.db.melloui.installed = true
 	E.private.melloui.install_complete = MLUI.Version
 
@@ -1995,6 +2032,15 @@ MLUI.installTable = {
 			PluginInstallFrame.Option1:SetText(L["Apply"])
 		end,
 		[6] = function()
+			PluginInstallFrame.SubTitle:SetFormattedText("%s", ADDONS)
+			PluginInstallFrame.Desc1:SetText(L["This part of the installation process will create and apply profiles for addons."])
+			PluginInstallFrame.Desc2:SetText(L["Please click the button below to setup your addons."])
+			PluginInstallFrame.Desc3:SetText(L["Importance: |cffD3CF00Medium|r"])
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript("OnClick", function() SetupAddons(); end)
+			PluginInstallFrame.Option1:SetText(L["Setup Addons"])
+		end,
+		[7] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You are now finished with the installation process. If you are in need of technical support please visit us at https://www.tukui.org."])
 			PluginInstallFrame.Desc2:SetText(L["Please click the button below so you can setup variables and ReloadUI."])
@@ -2012,7 +2058,8 @@ MLUI.installTable = {
 		[3] = L["Layout"],
 		[4] = L["UnitFrames"],
 		[5] = L["ActionBars"],
-		[6] = L["Installation Complete"],
+		[6] = ADDONS,
+		[7] = L["Installation Complete"],
 	},
 	StepTitlesColor = {1, 1, 1},
 	StepTitlesColorSelected = {0, 192/255, 250},
