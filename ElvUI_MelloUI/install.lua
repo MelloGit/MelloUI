@@ -1948,12 +1948,6 @@ local function SetupAddons()
 		MLUI:LoadDetailsProfile(res)
 		tinsert(addonNames, 'Details')
 	end
-
-	-- XIV_Databar
-	if MLUI:IsAddOnEnabled('XIV_Databar') then
-		MLUI:LoadXIV_DatabarProfile(res)
-		tinsert(addonNames, 'XIV_Databar')
-	end
 	
 	if checkTable(addonNames) ~= nil then
 		local profileString = format('|cfffff400%s |r', L['MelloUI successfully created and applied profile(s) for: '])
