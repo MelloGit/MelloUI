@@ -2,6 +2,8 @@
 local MLUI = E:GetModule('MelloUI');
 
 function MLUI:LoadBigWigsProfile(res)
+	LoadAddOn("BigWigs_Options")
+	LoadAddOn("BigWigs")
 
 	if BigWigs3DB['profiles'] == nil then BigWigs3DB['profiles'] = {} end
 
